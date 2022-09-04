@@ -5,7 +5,7 @@ Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
 
 # your-tribe-for-life-squad-page
 
-Ontwerp en maak met jouw squad een squadpagina op basis van een headless CMS en een framework.
+Ontwerp en maak met een team een overzicht van jouw tribe met alle online visitekaartjes, op basis van een headless CMS en een framework.
 
 ## Context
 Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdracht die je in een team uitvoert voor jouw eigen tribe bij FDND.
