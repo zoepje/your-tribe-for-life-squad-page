@@ -5,10 +5,10 @@ Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
 
 # your-tribe-for-life-squad-page
 
-Beschrijving van de leertaak
+Ontwerp en maak met jouw squad een squadpagina op basis van een headless CMS en een framework.
 
 ## Context
-Deze leertaak hoort bij [sprint # "titel van de sprint"]. Dit is een [niveau van de opdracht] die je [individueel, in team] uitvoert voor [opdrachtgever]
+Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdracht die je in een team uitvoert voor jouw eigen tribe bij FDND.
 
 ## Doel van deze opdracht
 *Wat leer je in deze taak.*
@@ -35,13 +35,14 @@ De development lifecycle kent de volgende stappen:
 
 ## Criteria
 
-Focus sprint # - De focus in deze sprint ligt op ...
+Focus sprint 13 - Je hebt al een basis social network voor jouw squad. Breid dit social network uit naar een platform waarop de tribe members elkaar kunnen vinden en ondersteunen. In ieder geval gedurende het begin van jullie carriere als frontend designer & developer.
 
-Voor deze leertaak gelden de gedragscriteria voor sprint #: 
-...
+De focus ligt op team building, samenwerken en hoe je frameworks inzet om een gezamenlijk doel te bereiken én in contact te blijven.
 
+Voor deze leertaak gelden de gedragscriteria voor sprint 13:
 
-
-
-
-
+- **S:** Werkt in teams en signaleert verbeterpunten op gebied van efficiëntie en effectiviteit.
+- **S:** Kan omgaan met diversiteit binnen teams en handelt respectvol naar anderen.
+- **C:** Betrekt gesprekspartners, luistert, vat samen, verifieert en vraagt door tot een boodschap helder is.
+- **C:** Documenteert op professionele wijze en bespreekt voortgang binnen het team.
+- **P:** Schetst om gedachten en processen te verkennen, abstracte begrippen over te brengen en de oplossingsrichting inzichtelijk te maken.
