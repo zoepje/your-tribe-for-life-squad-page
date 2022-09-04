@@ -3,7 +3,7 @@ De conventie voor naamgeving is sprintnaam-(sub)taaknaam
 Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
 -->
 
-# Naam
+# your-tribe-for-life-squad-page
 
 Beschrijving van de leertaak
 
