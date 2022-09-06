@@ -3,7 +3,7 @@ De conventie voor naamgeving is sprintnaam-(sub)taaknaam
 Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
 -->
 
-# your-tribe-for-life-squad-page
+# Your Tribe for Life squad page
 
 Ontwerp en maak met een team een overzicht van jouw tribe met alle online visitekaartjes, op basis van een headless CMS en een framework.
 
