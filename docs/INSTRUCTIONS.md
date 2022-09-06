@@ -11,12 +11,15 @@ Ontwerp en maak met een team een overzicht van jouw tribe met alle online visite
 Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdracht die je in een team uitvoert voor jouw eigen tribe bij FDND.
 
 ## Doel van deze opdracht
-*Wat leer je in deze taak.*
 
-beschrijf de taak in actieve taal: Je leert hoe...
+- Je leert werken met de backlog van een project op GitHub
+- Je leert hoe je een data model ontwerpt, dit vertaalt naar een content strucutuur in een Headless CMS
+- Je leert hoe je de endpoints van het Headless CMS kan ontsluiten in een framework en hoe je vervolgens de data kan renderen in een website
 
 ## Werkwijze
-*De werkwijze volgt de fasering van de DLC*
+
+<img width="1065" alt="image" src="https://user-images.githubusercontent.com/1061632/188638091-243f5208-5ace-4192-a5ba-5963badb66a5.png">
+
 
 Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt.
 De development lifecycle kent de volgende stappen:
@@ -29,9 +32,15 @@ De development lifecycle kent de volgende stappen:
 
 ### Aanpak
 1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).  
-2. Fork de leertaak
+2. Fork deze leertaak repository
 3. Hou je proces bij in de Wiki van de geforkte repository
 4. En schrijf een goede readme
+
+### Materiaal
+1. [Tribe Backlog](https://github.com/fdnd-agency/fdnd/projects/10)
+2. [Voorbeeld website](https://programma.fdnd.nl)
+3. [Voorbeeld website GitHub repository](https://github.com/fdnd/programma)
+4. [How to make a website with SvelteKit (and Prismic)](https://prismic.io/blog/svelte-sveltekit-tutorial)
 
 ## Criteria
 
