@@ -17,9 +17,7 @@ Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdr
 - Je leert hoe je de endpoints van het Headless CMS kan ontsluiten in een framework en hoe je vervolgens de data kan renderen in een website
 
 ## Werkwijze
-
-<img width="1065" alt="image" src="https://user-images.githubusercontent.com/1061632/188638091-243f5208-5ace-4192-a5ba-5963badb66a5.png">
-
+<img width="1519" alt="image" src="https://user-images.githubusercontent.com/1061632/188641358-bc246294-d7d9-4102-9a09-1ce83d847eb2.png">
 
 Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt.
 De development lifecycle kent de volgende stappen:
