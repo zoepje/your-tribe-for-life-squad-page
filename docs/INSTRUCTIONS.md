@@ -40,6 +40,7 @@ De development lifecycle kent de volgende stappen:
 3. [Voorbeeld website GitHub repository](https://github.com/fdnd/programma)
 4. [How to make a website with SvelteKit (and Prismic)](https://prismic.io/blog/svelte-sveltekit-tutorial)
 5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
+6. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
 
 ## Definitions of Done
 
