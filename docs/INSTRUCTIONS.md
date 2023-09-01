@@ -39,9 +39,18 @@ De development lifecycle kent de volgende stappen:
 2. [Voorbeeld website](https://programma.fdnd.nl)
 3. [Voorbeeld website GitHub repository](https://github.com/fdnd/programma)
 4. [How to make a website with SvelteKit (and Prismic)](https://prismic.io/blog/svelte-sveltekit-tutorial)
+5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
 
 ## Definitions of Done
 
 Focus sprint 13 - Je hebt al een basis social network voor jouw squad. Breid dit social network uit naar een platform waarop de tribe members elkaar kunnen vinden en ondersteunen. In ieder geval gedurende het begin van jullie carriere als frontend designer & developer.
 
 De focus ligt op team building, samenwerken en hoe je frameworks inzet om een gezamenlijk doel te bereiken én in contact te blijven.
+
+- Je hebt gewerkt volgens de verschillende fases van de development-lifecycle en je hebt je werk gedocumenteerd in de Readme en Wiki
+- Je toont aan dat je in de analysefase verschillende methoden en technieken hebt ingezet om te inventariseren wat er moet gebeuren
+- Je toont aan dat je in de ontwerpfase verschillende methoden en technieken hebt ingezet die ervoor zorgen dat je precies weet wat je moet bouwen
+- Je toont aan dat je in de bouwfase verschillende methoden en technieken hebt ingezet om het ontwerp te realiseren
+- Je toont aan dat je in de integratiefase verschillende methoden en technieken hebt ingezet om je website live te zetten
+- Je toont aan dat je in de testfase verschillende methoden en technieken hebt ingezet om het ontwerp te testen en verbeteren
+- De code staat op Github en heeft een live url
