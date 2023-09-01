@@ -38,9 +38,9 @@ De development lifecycle kent de volgende stappen:
 1. [Tribe Backlog](https://github.com/fdnd-agency/fdnd/projects/10)
 2. [Voorbeeld website: programma.fdnd.nl](https://programma.fdnd.nl)
 3. [Voorbeeld repository: programma.fdnd.nl](https://github.com/fdnd/programma)
-4. [How to make a website with SvelteKit (and Prismic)](https://prismic.io/blog/svelte-sveltekit-tutorial)
-5. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
-6. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
+4. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
+5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
+6. [How to make a website with SvelteKit (and Prismic)](https://prismic.io/blog/svelte-sveltekit-tutorial)
 
 ## Definitions of Done
 
