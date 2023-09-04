@@ -41,7 +41,6 @@ De development lifecycle kent de volgende stappen:
 4. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
 5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
 6. [Prismic.io 'Get Started with Svelte' Documentation](https://prismic.io/docs/svelte)
-7. [SvelteKit 1.0 Crash Course - Full Tutorial with Prismic](https://www.youtube.com/watch?v=mDQy0NsBrwg)
 
 ## Definitions of Done
 
