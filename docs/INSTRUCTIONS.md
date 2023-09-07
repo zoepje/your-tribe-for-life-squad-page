@@ -40,7 +40,7 @@ De development lifecycle kent de volgende stappen:
 3. [Voorbeeld repository: skateboards](https://github.com/joostf/skateboards)
 4. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
 5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
-6. [Prismic.io 'Get Started with Svelte' Documentation](https://prismic.io/docs/svelte)
+6. [Get Started with Svelte @ Prismic.io](https://prismic.io/docs/svelte)
 7. [Set up slicemachine @ Prismic.io](https://prismic.io/academy/prismic-and-nextjs/1-overview/1-intro) (thanks @mcphendriks!)
 
 ## Definitions of Done
