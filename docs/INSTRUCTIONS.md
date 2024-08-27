@@ -17,7 +17,7 @@ Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdr
 - Je leert hoe je de endpoints van het Headless CMS kan ontsluiten in een framework en hoe je vervolgens de data kan renderen in een website
 
 ## Werkwijze
-<img width="1691" alt="image" src="https://user-images.githubusercontent.com/1061632/190360669-576a28c8-8738-49e4-9ea7-a10d33eccaa6.png">
+[screenshot opdracht uit college toevoegen]
 
 Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt.
 De development lifecycle kent de volgende stappen:
@@ -29,15 +29,10 @@ De development lifecycle kent de volgende stappen:
 5. Testen - bijvoorbeeld: Unit testing (TDD), System test, User test, device lab test, A\B testing.
 
 ### Aanpak
-1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).  
-2. Fork deze leertaak repository
-3. Hou je proces bij in de Wiki van de geforkte repository
-4. En schrijf een goede readme
+[herschrijven aan de hand van de DLC, zonder gebruik te maken van de wiki]
 
 ### Materiaal
-1. [Tribe Backlog](https://github.com/fdnd-agency/fdnd/projects/10)
-2. [Voorbeeld website: skateboards](https://sveltekit-prismic-example.netlify.app/)
-3. [Voorbeeld repository: skateboards](https://github.com/joostf/skateboards)
+
 4. [Interactive tutorial @ learn.svelte.dev](https://learn.svelte.dev/tutorial/welcome-to-svelte)
 5. [Svelte getting started @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
 6. [Get Started with Svelte @ Prismic.io](https://prismic.io/docs/svelte)
