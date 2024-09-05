@@ -1,10 +1,11 @@
 <script>
-
+  export let data
 </script>
   
   <main>
     <h1>Team <span>27</span></h1>
     <p>Welcome to this squadpage, here you can find the two squads from year 2 of FDND</p>
+    <p>{data.person.name}</p>
     <a href="./about/+page.svelte">link die niet werkt</a>
 
   
