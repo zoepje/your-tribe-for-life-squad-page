@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  export let data
+</script>
+
+<h1>Squadpage</h1>
+
+<ul>
+  {#each data.persons as person}
+    {#if person.name.length > 0}
+      <li>
+        {person.name} {person.prefix} {person.surname}
+      </li>
+    {/if}
+  {/each}
+</ul>
