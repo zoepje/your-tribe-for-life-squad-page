@@ -57,7 +57,7 @@
 
     div {
       position: absolute;
-      font-size: 30em;
+      font-size: 32em;
       color: var(--secondary);
     }
 
