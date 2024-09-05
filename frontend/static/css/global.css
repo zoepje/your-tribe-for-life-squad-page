@@ -59,7 +59,7 @@
     --main-c0: #FFFCF2;
 }
 
-body {
+body, main {
     font-family: "Poppins";
     color:var(--main-c0);
     background: var(--main-c100);
