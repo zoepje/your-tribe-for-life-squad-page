@@ -12,8 +12,3 @@ const config = {
 
 export default config;
 
-const sveltePreprocess = require('svelte-preprocess')
-
-module.exports = {
-  preprocess: sveltePreprocess()
-}
