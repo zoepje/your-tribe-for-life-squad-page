@@ -8,68 +8,132 @@
   
       return false
     }
+
+    let intro = "Welcome to this squadpage, here you can find the two squads from Year 2 of FDND";
   </script>
   
   <main>
-    <h1>Team<span>.27</span></h1>
-    <p>Welcome to this squadpage, here you can find the two squads from Year 2 of FDND</p>
-  
-    <ul>
-      {#each data.persons as person}
-        <li>
-          <a href="/{person.id}">
-            <span class="avatar">
-              {#if person.avatar.length > 0 && checkAvatarImage (person.avatar)}
-                <img src="{person.avatar}" alt="Avatar van {person.name}">
-              {:else if person.avatar.length > 0 || checkAvatarImage (person.avatar)}
-                {person.avatar}
-              {:else}
-                <img src="https://robohash.org/mail@ashallendesign.co.uk" alt="Avatar van {person.name}">
-              {/if}
-            </span>
-  
-            {person.name} {person.prefix} {person.surname}
-          </a>
-        </li>
-      {/each}
-    </ul>
+    <section id="intro">
+      <div aria-hidden="true" class="sectionNumber">1</div>
+      <div>27</div>
+      <section>
+        <h1>Team<span class="titleNumber">.27</span></h1>
+        <p>{intro.toUpperCase()}</p>
+        <a href="#names" class="scrollButton">Scroll</a>
+      </section>
+    </section>
+    
+    <section id="names">
+      <div aria-hidden="true" class="sectionNumber">2</div>
+      <ul>
+        {#each data.persons as person}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </section>
   </main>
   
   <style>
+    main {
+      background: var(--primary);
+    }
+    
+    section {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    div {
+      position: absolute;
+      font-size: 30em;
+      color: var(--secondary);
+    }
+
+    .sectionNumber {
+      top: 30px;
+      left: 50px;
+      font-size: 4em;
+      pointer-events: none;
+    }
+
+    h1 {
+      font-family: Griffiths;
+      font-size: 5em;
+      margin: 0;
+    }
+
+    .titleNumber {
+      display: inline;
+      background: transparent;
+      margin-left: 10px;
+    }
+
+    p {
+      font-family: PoppinsThin;
+      text-align: center;
+      max-width: 36ch;
+    }
+
+    .scrollButton {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 1em;
+      bottom: 2em;
+      animation: wiggleButton infinite 2s;
+    }
+
+    @keyframes wiggleButton {
+      0% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(-1em);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
     ul {
       list-style: none;
-      padding:0;
-      display:flex;
-      flex-wrap: wrap;
-      gap:.5rem;
-      align-items:start;
+    }
+
+    ul:hover a,
+    ul:hover span {
+      color: var(--secondary);
     }
 
     a {
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      gap:.5rem;
-      margin-bottom: 1rem;
-      border-radius: .25rem;
-      border:1px solid var(--primary);
-      overflow:hidden;
-      padding:0 0 .25rem;
-      text-decoration:none;
+      font-size: 2em;
+      text-decoration: none;
     }
 
-    span {
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      width:5rem;
-      aspect-ratio: 1 / 1;
-      font-size: 3rem;
+    ul a:hover,
+    ul a:hover span {
+      color: var(--quaternary);
     }
 
-    img {
-      max-width:100%;
-      aspect-ratio: 1/1;
-      object-fit: contain;
+    .personSurname {
+      font-family: Griffiths;
+    }
+
+    /* Media Query for Mobile Users */
+    @media (max-width: 600px) {
+      .sectionNumber {
+        top: 0px;
+        left: 20px;
+      }
     }
   </style>

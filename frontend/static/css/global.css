@@ -1,12 +1,29 @@
 :root {
-    --primary: #FFFCF2;
-    --secondary: #CCC5B9;
-    --tertiary: #403D39;
-    --quaternary: #252422;
-  }
+  --primary: #FFFCF2;
+  --secondary: #CCC5B9;
+  --tertiary: #403D39;
+  --quaternary: #252422;
+}
+
+@font-face {
+  font-family: Griffiths;
+  src: url(../fonts/Griffiths.otf);
+}
+
+@font-face {
+  font-family: PoppinsThin;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins-Black.ttf);
+}
   
-  * {
-    font-family: Helvetica;
-    color: var(--quaternary);
-    background: var(--primary);
-  }
+* {
+  font-family: PoppinsBold;
+  color: var(--quaternary);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
