@@ -1,14 +1,6 @@
 <script>
-    export let data
-  
-    function checkAvatarImage (avatar) {
-      if (avatar.includes('https')) {
-        return true
-      } 
-  
-      return false
-    }
-  </script>
+
+</script>
   
   <main>
     <h1>Team 27</h1>
@@ -19,12 +11,8 @@
   
   <style>
 
-    ul {
-      list-style: none;
-      padding:0;
-      display:flex;
-      gap:.5rem;
-      align-items:start;
+    h1 {
+      color: var(--main-c33);
     }
 
   </style>
