@@ -1,0 +1,12 @@
+:root {
+    --primary: #FFFCF2;
+    --secondary: #CCC5B9;
+    --tertiary: #403D39;
+    --quaternary: #252422;
+  }
+  
+  * {
+    font-family: Helvetica;
+    color: var(--quaternary);
+    background: var(--primary);
+  }
