@@ -1,4 +1,4 @@
-p<script>
+<script>
   export let data
 </script>
   
@@ -19,8 +19,7 @@ p<script>
 
     main {    display: flex; flex-direction: column;
               align-items: center; justify-content: end; 
-              height: 100vh; width: 100vw;
-              overflow: hidden; }
+               }
 
     h1 {      text-transform: uppercase;
               font-size: 4em; font-weight: 700;
