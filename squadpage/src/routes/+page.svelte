@@ -29,7 +29,12 @@
       {#each data.persons as person}
         <li>
           <a href="/{person.id}">
-            {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
+            {person.name.toUpperCase()} <span class="personSurname">
+              {#if person.prefix === null}
+              {person.surname}
+              {:else}
+              {person.prefix} {person.surname}
+              {/if} </span>
           </a>
         </li>
       {/each}
