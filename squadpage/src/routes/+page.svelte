@@ -10,6 +10,28 @@
   }
 
   let intro = "Welcome to this squadpage, here you can find the two squads from Year 2 of FDND";
+
+  let squad1d 
+let squad1e 
+let squad1f 
+
+function showSquad(val){
+  if(val==1){
+    squad1d.style.display='flex'
+    squad1e.style.display='none'
+    squad1f.style.display='none'
+  }
+  else if(val==2){
+    squad1d.style.display='none'
+    squad1e.style.display='flex'
+    squad1f.style.display='none'
+  }
+  else if(val==3){
+    squad1d.style.display='none'
+    squad1e.style.display='none'
+    squad1f.style.display='flex'
+  }
+}
 </script>
 
 <main>
@@ -30,26 +52,26 @@
         <input type="radio" 
                 name="squad" 
                 id="1d" 
-                onclick="showSquad(1)">
+                on:click={showSquad(1)}>
         <p>1d</p>        
       </label>
       <label for="1e">
         <input type="radio" 
                 name="squad" 
                 id="1e" 
-                onclick="showSquad(2)">
+                on:click={showSquad(2)}>
         <p>1e</p>        
       </label>
       <label for="1f">
         <input type="radio" 
                 name="squad" 
                 id="1f" 
-                onclick="showSquad(3)">
+                on:click={showSquad(3)}>
         <p>1f</p>        
       </label>
     </div>
 
-    <ul id="squad1d">
+    <ul bind:this={squad1d}>
       {#each data.persons as person}
         {#if person.squad_id === 3}
           <li>
@@ -61,7 +83,7 @@
       {/each}
     </ul>
 
-    <ul id="squad1e">
+    <ul bind:this={squad1e}>
       {#each data.persons as person}
         {#if person.squad_id === 4}
           <li>
@@ -73,7 +95,7 @@
       {/each}
     </ul>
 
-    <ul id="squad1f">
+    <ul bind:this={squad1f}>
       {#each data.persons as person}
         {#if person.squad_id === 5}
           <li>
