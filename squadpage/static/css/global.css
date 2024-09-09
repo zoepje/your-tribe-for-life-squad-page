@@ -5,6 +5,15 @@
   --quaternary: #252422;
 }
 
+@media (prefers-color-scheme:dark) {
+  body {
+    --primary: #252422;
+    --secondary: #403D39;
+    --tertiary: #CCC5B9;
+    --quaternary: #FFFCF2;
+  }
+  }
+
 @font-face {
   font-family: Griffiths;
   src: url(../fonts/Griffiths.otf);
