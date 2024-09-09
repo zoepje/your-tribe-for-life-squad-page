@@ -27,7 +27,7 @@
     <div aria-hidden="true" class="sectionNumber">2</div>
     <ul>
       {#each data.persons as person}
-        <li>
+        <li class="class{person.squad_id}">
           <a href="/{person.id}">
             {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
           </a>
