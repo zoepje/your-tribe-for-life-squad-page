@@ -12,8 +12,8 @@
   let intro = "Welcome to this squadpage, here you can find the two squads from Year 2 of FDND";
 
   let squad1d 
-let squad1e 
-let squad1f 
+  let squad1e 
+  let squad1f 
 
 function showSquad(val){
   if(val==1){
