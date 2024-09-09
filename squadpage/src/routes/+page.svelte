@@ -25,13 +25,63 @@
   
   <section id="names">
     <div aria-hidden="true" class="sectionNumber">2</div>
-    <ul>
+    <div class="filters">
+      <label for="1d">
+        <input type="radio" 
+                name="squad" 
+                id="1d" 
+                onclick="showSquad(1)">
+        <p>1d</p>        
+      </label>
+      <label for="1e">
+        <input type="radio" 
+                name="squad" 
+                id="1e" 
+                onclick="showSquad(2)">
+        <p>1e</p>        
+      </label>
+      <label for="1f">
+        <input type="radio" 
+                name="squad" 
+                id="1f" 
+                onclick="showSquad(3)">
+        <p>1f</p>        
+      </label>
+    </div>
+
+    <ul id="squad1d">
       {#each data.persons as person}
-        <li class="class{person.squad_id}">
-          <a href="/{person.id}">
-            {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
-          </a>
-        </li>
+        {#if person.squad_id === 3}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
+            </a>
+          </li>
+        {/if}
+      {/each}
+    </ul>
+
+    <ul id="squad1e">
+      {#each data.persons as person}
+        {#if person.squad_id === 4}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
+            </a>
+          </li>
+        {/if}
+      {/each}
+    </ul>
+
+    <ul id="squad1f">
+      {#each data.persons as person}
+        {#if person.squad_id === 5}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">{person.prefix} {person.surname}</span>
+            </a>
+          </li>
+        {/if}
       {/each}
     </ul>
   </section>
@@ -106,8 +156,26 @@
     }
   }
 
+  .filters {
+    top: 10px;
+    right: 10px;
+  }
+
+  .filters label {
+    display: flex;
+    height: 50px;
+  }
+  .filters p {
+    font-size: 1rem;
+  }
+
   ul {
     list-style: none;
+    width: 500px;
+  }
+
+  ul:first-of-type{
+    margin-top: 3em;
   }
 
   ul:hover a,
