@@ -1,37 +1,10 @@
 <script>
   export let data
 
-  function checkAvatarImage (avatar) {
-    if (avatar.includes('https')) {
-      return true
-    } 
-
-    return false
-  }
-
   let intro = "Welcome to this squadpage, here you can find the two squads from Year 2 of FDND";
 
-  let squad1d 
-  let squad1e 
-  let squad1f 
-
-function showSquad(val){
-  if(val==1){
-    squad1d.style.display='flex'
-    squad1e.style.display='none'
-    squad1f.style.display='none'
-  }
-  else if(val==2){
-    squad1d.style.display='none'
-    squad1e.style.display='flex'
-    squad1f.style.display='none'
-  }
-  else if(val==3){
-    squad1d.style.display='none'
-    squad1e.style.display='none'
-    squad1f.style.display='flex'
-  }
-}
+  let current = 1;
+  
 </script>
 
 <main>
@@ -52,26 +25,27 @@ function showSquad(val){
         <input type="radio" 
                 name="squad" 
                 id="1d" 
-                on:click={showSquad(1)}>
+                on:click={() => current = 1}
+                checked>
         <p>1d</p>        
       </label>
       <label for="1e">
         <input type="radio" 
                 name="squad" 
                 id="1e" 
-                on:click={showSquad(2)}>
+                on:click={() => current = 2}>
         <p>1e</p>        
       </label>
       <label for="1f">
         <input type="radio" 
                 name="squad" 
                 id="1f" 
-                on:click={showSquad(3)}>
+                on:click={() => current = 3}>
         <p>1f</p>        
       </label>
     </div>
 
-    <ul bind:this={squad1d}>
+    <ul class:show={current === 1} class:hide={current != 1}>
       {#each data.persons as person}
         {#if person.squad_id === 3}
           <li>
@@ -83,7 +57,7 @@ function showSquad(val){
       {/each}
     </ul>
 
-    <ul bind:this={squad1e}>
+    <ul class:show={current === 2} class:hide={current != 2}>
       {#each data.persons as person}
         {#if person.squad_id === 4}
           <li>
@@ -95,7 +69,7 @@ function showSquad(val){
       {/each}
     </ul>
 
-    <ul bind:this={squad1f}>
+    <ul class:show={current === 3} class:hide={current != 3}>
       {#each data.persons as person}
         {#if person.squad_id === 5}
           <li>
@@ -191,13 +165,18 @@ function showSquad(val){
     font-size: 1rem;
   }
 
-  ul {
-    list-style: none;
-    width: 500px;
+  .show {
+    display: block;
   }
 
-  ul:first-of-type{
+  .hide {
+    display: none;
+  }
+
+  ul {
     margin-top: 3em;
+    list-style: none;
+    width: 500px;
   }
 
   ul:hover a,
