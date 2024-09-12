@@ -155,14 +155,34 @@
   .filters {
     top: 10px;
     right: 10px;
+    display: flex;
   }
 
   .filters label {
     display: flex;
     height: 50px;
+    margin: 3rem;
+    transition: 0.1s ease;
   }
+
+  .filters label:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+
   .filters p {
-    font-size: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: PoppinsBold;
+    color: var(--secondary);
+  }
+
+  .filters input {
+    visibility: hidden;
+  }
+
+  .filters input:checked ~ p {
+    color: var(--quaternary);
   }
 
   .show {
@@ -174,7 +194,7 @@
   }
 
   ul {
-    margin-top: 3em;
+    margin: 10em;
     list-style: none;
     width: 500px;
   }
