@@ -1,15 +1,10 @@
 <script>
   export let data
 
-  function checkAvatarImage (avatar) {
-    if (avatar.includes('https')) {
-      return true
-    } 
-
-    return false
-  }
-
   let intro = "Welcome to this squadpage, here you can find the two squads from Year 2 of FDND";
+
+  let current = 1;
+  
 </script>
 
 <main>
@@ -31,19 +26,80 @@
   </section>
   
   <section id="names">
-    <div aria-hidden="true" class="sectionNumber sn-t">2</div>
-    <ul>
+    <div aria-hidden="true" class="sectionNumber">2</div>
+    <div class="filters">
+      <label for="1d">
+        <input type="radio" 
+                name="squad" 
+                id="1d" 
+                on:click={() => current = 1}
+                checked>
+        <p>1d</p>        
+      </label>
+      <label for="1e">
+        <input type="radio" 
+                name="squad" 
+                id="1e" 
+                on:click={() => current = 2}>
+        <p>1e</p>        
+      </label>
+      <label for="1f">
+        <input type="radio" 
+                name="squad" 
+                id="1f" 
+                on:click={() => current = 3}>
+        <p>1f</p>        
+      </label>
+    </div>
+
+    <ul class:show={current === 1} class:hide={current != 1}>
       {#each data.persons as person}
-        <li>
-          <a href="/{person.id}">
-            {person.name.toUpperCase()} <span class="personSurname">
-              {#if person.prefix === null}
-              {person.surname}
-              {:else}
-              {person.prefix} {person.surname}
-              {/if} </span>
-          </a>
-        </li>
+        {#if person.squad_id === 3}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">
+                {#if person.prefix === null}
+                {person.surname}
+                {:else}
+                {person.prefix} {person.surname}
+                {/if} </span>
+            </a>
+          </li>
+        {/if}
+      {/each}
+    </ul>
+
+    <ul class:show={current === 2} class:hide={current != 2}>
+      {#each data.persons as person}
+        {#if person.squad_id === 4}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">
+                {#if person.prefix === null}
+                {person.surname}
+                {:else}
+                {person.prefix} {person.surname}
+                {/if} </span>
+            </a>
+          </li>
+        {/if}
+      {/each}
+    </ul>
+
+    <ul class:show={current === 3} class:hide={current != 3}>
+      {#each data.persons as person}
+        {#if person.squad_id === 5}
+          <li>
+            <a href="/{person.id}">
+              {person.name.toUpperCase()} <span class="personSurname">
+                {#if person.prefix === null}
+                {person.surname}
+                {:else}
+                {person.prefix} {person.surname}
+                {/if} </span>
+            </a>
+          </li>
+        {/if}
       {/each}
     </ul>
   </section>
@@ -164,8 +220,51 @@
     }
   }
 
+  .filters {
+    top: 10px;
+    right: 10px;
+    display: flex;
+  }
+
+  .filters label {
+    display: flex;
+    height: 50px;
+    margin: 3rem;
+    transition: 0.1s ease;
+  }
+
+  .filters label:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+
+  .filters p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: PoppinsBold;
+    color: var(--secondary);
+  }
+
+  .filters input {
+    visibility: hidden;
+  }
+
+  .filters input:checked ~ p {
+    color: var(--quaternary);
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
   ul {
+    margin: 10em;
     list-style: none;
+    width: 500px;
   }
 
   ul:hover a,
