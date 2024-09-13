@@ -26,11 +26,11 @@
 If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# Ga naar de squadpage folder
+cd squadpage
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# Installeer alle benodigde bestanden
+npm install
 ```
 
 ### Developing
