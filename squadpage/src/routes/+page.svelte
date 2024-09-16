@@ -129,6 +129,7 @@
     font-size: 32em;
     color: var(--secondary);
     z-index: 1;
+
   }
 
   .sectionNumber {
@@ -141,6 +142,18 @@
 
   .sn-t {
     top: -20px;
+  }
+
+
+  h1, .titleNumber{
+    animation-name: color-fade;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes color-fade {
+  from {color: transparent;}
+  to {color: black;}
   }
 
   h1 {
@@ -161,6 +174,22 @@
     text-align: center;
     max-width: 36ch;
     z-index: 2;
+    animation-name: text-animation;
+		animation-duration: 1.7s;
+		animation-iteration-count: 1;
+		transition: ease-in;
+  }
+
+  @keyframes text-animation{
+	from{
+    color: transparent;
+		translate: 0 5em;
+		opacity: 0;
+	}
+	to{
+    color: black;
+		translate: 0em;
+	}
   }
 
   .scrollButton {
