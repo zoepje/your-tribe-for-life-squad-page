@@ -288,19 +288,9 @@
     max-width: 500px;
   }
 
-  ul:hover a,
-  ul:hover span {
-    color: var(--secondary);
-  }
-
   a {
     font-size: 1.5em;
     text-decoration: none;
-  }
-
-  ul a:hover,
-  ul a:hover span {
-    color: var(--quaternary);
   }
 
   .personSurname {
@@ -368,8 +358,18 @@
       margin-top: 10em;
     }
 
+    ul:hover a,
+    ul:hover span {
+      color: var(--secondary);
+    }
+
     a {
       font-size: 2em;
+    }
+
+    ul a:hover,
+    ul a:hover span {
+      color: var(--quaternary);
     }
   }
 </style>
