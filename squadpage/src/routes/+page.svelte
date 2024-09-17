@@ -134,14 +134,14 @@
 
   div {
     position: absolute;
-    font-size: 32em;
+    font-size: 17em;
     color: var(--secondary);
     z-index: 1;
   }
 
   .sectionNumber {
-    top: 30px;
-    left: 50px;
+    top: 0px;
+    left: 20px;
     font-size: 4em;
     pointer-events: none;
     z-index: 1;
@@ -153,14 +153,9 @@
     animation-iteration-count: 1;
   }
 
-  @keyframes color-fade {
-  from {color: transparent;}
-  to {color: black;}
-  }
-
   h1 {
     font-family: Griffiths;
-    font-size: 5em;
+    font-size: 4em;
     margin: 0;
     z-index: 2;
   }
@@ -172,6 +167,7 @@
   }
 
   p {
+    padding-inline: 20px;
     font-family: PoppinsThin;
     text-align: center;
     max-width: 36ch;
@@ -180,18 +176,6 @@
 		animation-duration: 1.7s;
 		animation-iteration-count: 1;
 		transition: ease-in;
-  }
-
-  @keyframes text-animation{
-	from{
-    color: transparent;
-		translate: 0 5em;
-		opacity: 0;
-	}
-	to{
-    color: black;
-		translate: 0em;
-	}
   }
 
   .scrollButton {
@@ -249,18 +233,6 @@
     --primary: #252422;
   }
 
-  @keyframes wiggleButton {
-    0% {
-      transform: translateY(0);
-    }
-    75% {
-      transform: translateY(-1em);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
   /* Filters */
   .filters {
     position: absolute;
@@ -272,7 +244,6 @@
   .filters label {
     display: flex;
     height: 50px;
-    margin: 3rem;
     transition: 0.1s ease;
   }
 
@@ -282,7 +253,7 @@
   }
 
   .filters p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-family: PoppinsBold;
     color: var(--secondary);
@@ -310,9 +281,11 @@
   }
 
   ul {
-    margin: 10em;
+    margin-top: 7em;
+    margin-inline: auto;
     list-style: none;
-    width: 500px;
+    width: 80vw;
+    max-width: 500px;
   }
 
   ul:hover a,
@@ -321,7 +294,7 @@
   }
 
   a {
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
   }
 
@@ -334,11 +307,69 @@
     font-family: Griffiths;
   }
 
-  /* Media Query for Mobile Users */
-  @media (max-width: 600px) {
+  /* Keyframes */
+  @keyframes color-fade {
+    from {
+      color: transparent;
+    }
+    to {
+      color: black;
+    }
+  }
+
+  @keyframes text-animation{
+    from{
+      color: transparent;
+      translate: 0 5em;
+      opacity: 0;
+    }
+    to{
+      color: black;
+      translate: 0em;
+    }
+  }
+
+  @keyframes wiggleButton {
+    0% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-1em);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* Media Query for Desktop */
+  @media only screen and (min-width: 600px){
+    div {
+      font-size: 32em;
+    }
+
     .sectionNumber {
-      top: 0px;
-      left: 20px;
+      top: 30px;
+      left: 50px;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    .filters label {
+      margin: 3rem;
+    }
+
+    .filters p {
+      font-size: 2rem;
+    }
+
+    ul {
+      margin-top: 10em;
+    }
+
+    a {
+      font-size: 2em;
     }
   }
 </style>
