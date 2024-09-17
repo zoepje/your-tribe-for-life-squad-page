@@ -140,11 +140,6 @@
     z-index: 1;
   }
 
-  .sn-t {
-    top: -20px;
-  }
-
-
   h1, .titleNumber{
     animation-name: color-fade;
     animation-duration: 3s;
