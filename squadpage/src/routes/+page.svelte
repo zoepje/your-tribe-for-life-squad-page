@@ -179,6 +179,7 @@
   }
 
   .scrollButton {
+    z-index: 1;
     position: absolute;
     text-transform: uppercase;
     font-size: 1em;
@@ -264,7 +265,7 @@
     left: -9999rem;
   }
 
-  .filters label:focus-within {
+  .filters:has(:focus-visible) label:focus-within {
     outline: var(--focus);
   }
 
