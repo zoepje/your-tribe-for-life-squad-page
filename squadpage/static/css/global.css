@@ -3,7 +3,8 @@
   --secondary: #CCC5B9;
   --tertiary: #403D39;
   --quaternary: #252422;
-  --focus: solid .2em blue;
+  --focus: solid 2px blue;
+  --border-radius: .5rem;
 }
 
 @font-face {
@@ -27,4 +28,9 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+}
+
+:focus {
+  outline: var(--focus);
+  border-radius: var(--border-radius);
 }

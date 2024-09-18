@@ -200,6 +200,7 @@
   fieldset:has(:focus-visible) label.toggleDark,
   fieldset:has(:focus-visible) label.toggleLight{
     outline: var(--focus);
+    border-radius: var(--border-radius);
   }
 
   .toggleDark, .toggleLight {
@@ -267,6 +268,7 @@
 
   .filters:has(:focus-visible) label:focus-within {
     outline: var(--focus);
+    border-radius: var(--border-radius);
   }
 
   .filters input:checked ~ p {
