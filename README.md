@@ -13,12 +13,17 @@ Op deze squadpage kun je in contact komen met je mede leerlingen uit jouw squad 
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+**📸 Team 27 squadpage**
+<img width="1335" alt="Screenshot 2024-09-19 at 5 43 00 PM" src="https://github.com/user-attachments/assets/7f020391-2d95-46d3-ac99-7e78b745e16a">
+<img width="1335" alt="Screenshot 2024-09-19 at 5 43 09 PM" src="https://github.com/user-attachments/assets/5ab1c617-62d2-4c82-9eec-4c4623bb02d7">
+
+🌐 [Squadpage](your-tribe-for-life-squad-page-sandy.vercel.app)
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-Wij hebben deze squadpage gebouwd met HTML, CSS, JavaScript en SvelteKit. Ook hebben we gebruik gemaakt van een directus database waaruit we de gegevens halen van de studenten.
+Wij hebben deze squadpage gebouwd met HTML, CSS, JavaScript en SvelteKit. Voor de data maken we gebruik van een Directus, waaruit we informatie over de studenten ophalen.
+Wij hebben een global CSS bestand in `static/css` waarin we de fonts en custom properties in hebben staan. In de map `src/routes` bevinden zich twee bestanden: `+page.server.js` en `+page.svelte`. In `+page.server.js` wordt de data opgehaald uit de Directus, terwijl `+page.svelte` alle HTML, JavaScript en CSS bevat die nodig zijn om de website weer te geven.
 
 ## Installatie
 1. Open een terminalvenster en ga naar de juiste map door het volgende commando te gebruiken: `cd squadpage`
